@@ -63,12 +63,12 @@ body {
    ============================================================ */
 .topbar {
   text-align: center;
-  padding: 32px 0 16px;
+  padding: 20px 0 10px;
 }
 
 .topbar-logo {
   font-family: 'Archivo Black', sans-serif;
-  font-size: 56px;
+  font-size: 44px;
   font-weight: 900;
   letter-spacing: -.04em;
   color: #fff;
@@ -85,15 +85,15 @@ body {
 }
 
 .topbar-divider {
-  width: 220px;
+  width: 180px;
   height: 1.5px;
   background: linear-gradient(90deg, transparent, rgba(255,255,255,.4), transparent);
-  margin: 10px auto 8px;
+  margin: 6px auto 6px;
 }
 
 .topbar-sub {
   font-family: 'Archivo Black', sans-serif;
-  font-size: 11px;
+  font-size: 9px;
   font-weight: 900;
   letter-spacing: .28em;
   color: rgba(255,255,255,.7);
@@ -105,11 +105,11 @@ body {
    ============================================================ */
 .hero {
   position: relative;
-  padding: 28px 24px 32px;
-  margin-top: 8px;
+  padding: 18px 24px 22px;
+  margin-top: 4px;
   background:
     linear-gradient(135deg, rgba(30, 42, 82, .9) 0%, rgba(15, 24, 48, .9) 100%);
-  border-radius: 24px;
+  border-radius: 20px;
   border: 1px solid rgba(255,255,255,.1);
   overflow: hidden;
   box-shadow: 0 8px 32px rgba(0, 0, 0, .3);
@@ -129,27 +129,27 @@ body {
 .hero-char-wrap {
   display: flex;
   justify-content: center;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   position: relative;
   z-index: 2;
 }
 
 .hero-char-circle {
-  width: 140px;
-  height: 140px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   background: #ffffff;
   display: grid;
   place-items: center;
   position: relative;
   box-shadow:
-    0 0 0 4px rgba(255,255,255,.08),
-    0 8px 24px rgba(0, 0, 0, .4);
+    0 0 0 3px rgba(255,255,255,.08),
+    0 6px 20px rgba(0, 0, 0, .4);
 }
 
 .hero-char {
-  width: 110px;
-  height: 110px;
+  width: 80px;
+  height: 80px;
   object-fit: contain;
   position: relative;
   z-index: 1;
@@ -166,19 +166,19 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 6px 14px;
+  padding: 4px 12px;
   border-radius: 999px;
   background: rgba(255,255,255,.06);
   border: 1px solid rgba(255,255,255,.12);
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 700;
   color: #fff;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   letter-spacing: -.01em;
 }
 
 .badge-dot {
-  width: 6px; height: 6px;
+  width: 5px; height: 5px;
   border-radius: 50%;
   background: #6ee7c7;
   box-shadow: 0 0 8px #6ee7c7;
@@ -191,12 +191,12 @@ body {
 }
 
 .hero h1 {
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 800;
   letter-spacing: -.025em;
   line-height: 1.2;
   color: #fff;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
   background: linear-gradient(135deg, #fff 0%, #b4c5e6 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -211,7 +211,7 @@ body {
 }
 
 .hero-tag {
-  font-size: 13px;
+  font-size: 12px;
   color: var(--tx2);
   font-weight: 500;
 }
@@ -222,8 +222,8 @@ body {
 .cat-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  margin-top: 16px;
+  gap: 8px;
+  margin-top: 10px;
 }
 
 .cat-card {
@@ -231,10 +231,10 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 20px 16px;
+  padding: 14px 12px;
   background: var(--surface);
   border: 1.5px solid rgba(255,255,255,.5);
-  border-radius: 16px;
+  border-radius: 14px;
   text-decoration: none;
   color: inherit;
   transition: transform .15s, border-color .15s, background .15s;
@@ -265,32 +265,32 @@ body {
 }
 
 .cat-icon-wrap {
-  width: 64px;
-  height: 64px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   background: #ffffff;
   display: grid;
   place-items: center;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, .25);
 }
 
 .cat-icon-img {
-  width: 48px;
-  height: 48px;
+  width: 36px;
+  height: 36px;
   object-fit: contain;
 }
 
 .cat-name {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 800;
   letter-spacing: -.01em;
   color: #fff;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
 }
 
 .cat-desc {
-  font-size: 11px;
+  font-size: 10px;
   color: var(--tx2);
   line-height: 1.4;
 }
@@ -299,20 +299,20 @@ body {
    푸터
    ============================================================ */
 .foot {
-  margin-top: 28px;
+  margin-top: 14px;
   text-align: center;
 }
 
 .foot-line {
-  width: 40px;
+  width: 32px;
   height: 1px;
   background: var(--line2);
-  margin: 0 auto 12px;
+  margin: 0 auto 8px;
 }
 
 .foot-text {
   font-family: 'DM Mono', monospace;
-  font-size: 9px;
+  font-size: 8px;
   letter-spacing: .2em;
   color: var(--tx3);
 }
