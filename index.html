@@ -13,14 +13,29 @@
 <div id="root">
   <div class="hub fade">
 
+    <!-- 상단 헤더 -->
+    <div class="topbar">
+      <div class="topbar-logo">RRC</div>
+      <div class="topbar-sub">ROCKET RUNNING CREW</div>
+    </div>
+
     <!-- 히어로 -->
     <div class="hero">
-      <div class="hero-bg"></div>
-      <img src="logo.png" class="hero-logo" alt="RRC 로고">
-      <img src="character.png" class="hero-char" alt="로켓보이">
+      <div class="hero-glow"></div>
+
+      <div class="hero-char-wrap">
+        <div class="hero-char-circle">
+          <img src="character.png" class="hero-char" alt="로켓보이">
+        </div>
+      </div>
+
       <div class="hero-text">
-        <div class="hero-sub">세방전지 사내 러닝 동호회</div>
-        <h1>출근은 따로,<br>러닝은 함께</h1>
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span>세방전지 사내 러닝 동호회</span>
+        </div>
+        <h1>출근은 따로,<br><span class="hl">러닝은 함께</span></h1>
+        <p class="hero-tag">로케트처럼 가볍게, 함께 달려요 🚀</p>
       </div>
     </div>
 
@@ -46,6 +61,12 @@
         <div class="cat-name">FAQ</div>
         <div class="cat-desc">자주 묻는 질문</div>
       </a>
+    </div>
+
+    <!-- 푸터 -->
+    <div class="foot">
+      <div class="foot-line"></div>
+      <div class="foot-text">© ROCKET RUNNING CREW</div>
     </div>
 
   </div>
@@ -80,11 +101,7 @@ const eventBtn = document.getElementById('eventBtn');
 const modal = document.getElementById('eventModal');
 const modalClose = document.getElementById('modalClose');
 
-eventBtn.onclick = (e) => {
-  e.preventDefault();
-  modal.classList.add('on');
-};
-
+eventBtn.onclick = (e) => { e.preventDefault(); modal.classList.add('on'); };
 modalClose.onclick = () => modal.classList.remove('on');
 modal.onclick = (e) => { if (e.target === modal) modal.classList.remove('on'); };
 </script>
