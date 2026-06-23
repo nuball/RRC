@@ -76,6 +76,7 @@ body {
   font-style: italic;
   transform: skewX(-8deg);
   display: inline-block;
+  padding: 0 12px 0 4px;
   background: linear-gradient(180deg, #ffffff 0%, #c5d2e8 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
