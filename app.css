@@ -63,31 +63,40 @@ body {
    ============================================================ */
 .topbar {
   text-align: center;
-  padding: 28px 0 16px;
+  padding: 32px 0 16px;
 }
 
 .topbar-logo {
-  font-family: 'DM Mono', monospace;
-  font-size: 36px;
-  font-weight: 500;
-  letter-spacing: .25em;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 56px;
+  font-weight: 900;
+  letter-spacing: -.04em;
   color: #fff;
-  margin-right: -0.25em;
-  background: linear-gradient(180deg, #ffffff 0%, #a4b0c5 100%);
+  line-height: .9;
+  font-style: italic;
+  transform: skewX(-8deg);
+  display: inline-block;
+  background: linear-gradient(180deg, #ffffff 0%, #c5d2e8 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-shadow: 0 2px 20px rgba(255,255,255,.1);
-  line-height: 1;
+  text-shadow: 0 4px 24px rgba(255,255,255,.08);
+}
+
+.topbar-divider {
+  width: 220px;
+  height: 1.5px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.4), transparent);
+  margin: 10px auto 8px;
 }
 
 .topbar-sub {
-  font-size: 10px;
-  font-weight: 600;
-  letter-spacing: .4em;
-  color: var(--tx3);
-  margin-top: 8px;
-  margin-right: -0.4em;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .28em;
+  color: rgba(255,255,255,.7);
+  margin-right: -0.28em;
 }
 
 /* ============================================================
