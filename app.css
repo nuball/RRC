@@ -63,22 +63,31 @@ body {
    ============================================================ */
 .topbar {
   text-align: center;
-  padding: 24px 0 12px;
+  padding: 28px 0 16px;
 }
 
-.topbar-logo-img {
-  height: 32px;
-  width: auto;
-  display: inline-block;
+.topbar-logo {
+  font-family: 'DM Mono', monospace;
+  font-size: 36px;
+  font-weight: 500;
+  letter-spacing: .25em;
+  color: #fff;
+  margin-right: -0.25em;
+  background: linear-gradient(180deg, #ffffff 0%, #a4b0c5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 2px 20px rgba(255,255,255,.1);
+  line-height: 1;
 }
 
 .topbar-sub {
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 600;
-  letter-spacing: .35em;
+  letter-spacing: .4em;
   color: var(--tx3);
-  margin-top: 6px;
-  margin-right: -0.35em;
+  margin-top: 8px;
+  margin-right: -0.4em;
 }
 
 /* ============================================================
