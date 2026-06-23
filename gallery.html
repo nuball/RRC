@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#0a1428">
+<title>갤러리 — RRC</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
+<link rel="stylesheet" href="app.css">
+<style>
+  .page { width: 100%; max-width: 420px; padding: 24px 16px 64px; }
+  .page-top {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: 24px;
+  }
+  .page-back {
+    font-size: 13px; color: var(--tx2); text-decoration: none;
+    display: inline-flex; align-items: center; gap: 4px;
+  }
+  .page-back:hover { color: #fff; }
+  .page h1 {
+    font-size: 28px; font-weight: 800; letter-spacing: -.02em;
+    margin-bottom: 8px;
+  }
+  .page-desc {
+    font-size: 13px; color: var(--tx2); margin-bottom: 24px;
+  }
+  .coming-soon {
+    text-align: center;
+    padding: 60px 20px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+  }
+  .coming-soon-icon { font-size: 48px; margin-bottom: 16px; }
+  .coming-soon-title {
+    font-size: 18px; font-weight: 700; margin-bottom: 8px;
+  }
+  .coming-soon-desc {
+    font-size: 13px; color: var(--tx2); line-height: 1.7;
+  }
+</style>
+</head>
+<body>
+<div id="root">
+  <div class="page fade">
+    <div class="page-top">
+      <a class="page-back" href="index.html">← 메인</a>
+    </div>
+    <h1>갤러리 📸</h1>
+    <p class="page-desc">대회 · 정기모임 사진들</p>
+
+    <div class="coming-soon">
+      <div class="coming-soon-icon">🚧</div>
+      <div class="coming-soon-title">준비 중이에요</div>
+      <div class="coming-soon-desc">
+        곧 대회 사진과<br>
+        정기 모임 사진을 만나볼 수 있어요!
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
