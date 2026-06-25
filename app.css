@@ -145,6 +145,9 @@ body {
   box-shadow:
     0 0 0 3px rgba(255,255,255,.08),
     0 6px 20px rgba(0, 0, 0, .4);
+  overflow: hidden;
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 .hero-char {
@@ -153,6 +156,8 @@ body {
   object-fit: contain;
   position: relative;
   z-index: 1;
+  display: block;
+  transform: translateZ(0);
 }
 
 /* 히어로 텍스트 */
