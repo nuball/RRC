@@ -279,12 +279,17 @@ body {
   place-items: center;
   margin-bottom: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, .25);
+  overflow: hidden;
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 .cat-icon-img {
   width: 56px;
   height: 56px;
   object-fit: contain;
+  display: block;
+  transform: translateZ(0);
 }
 
 .cat-name {
