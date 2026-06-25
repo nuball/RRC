@@ -42,14 +42,14 @@
 
     <!-- 카테고리 그리드 -->
     <div class="cat-grid">
-      <a class="cat-card" href="https://rrc-race.vercel.app">
+      <a class="cat-card" href="race.html">
         <div class="cat-icon-wrap">
           <img src="icon-race.png" class="cat-icon-img" alt="대회">
         </div>
         <div class="cat-name">대회</div>
         <div class="cat-desc">참가 대회 기록</div>
       </a>
-      <a class="cat-card" href="#" id="eventBtn">
+      <a class="cat-card" href="event.html">
         <div class="cat-icon-wrap">
           <img src="icon-event.png" class="cat-icon-img" alt="이벤트">
         </div>
@@ -79,40 +79,10 @@
     </div>
 
   </div>
-
-  <!-- 이벤트 선택 모달 -->
-  <div class="modal" id="eventModal">
-    <div class="modal-body">
-      <h3>이벤트 선택</h3>
-      <a class="event-link" href="https://rrc-runluck.vercel.app">
-        <span class="event-icon">🎟</span>
-        <div class="event-info">
-          <div class="event-name">런럭 RUN&LUCK</div>
-          <div class="event-desc">매일 달리고 추첨권 받기</div>
-        </div>
-        <span class="event-arrow">→</span>
-      </a>
-      <a class="event-link" href="https://rrc-lotto.vercel.app">
-        <span class="event-icon">🎱</span>
-        <div class="event-info">
-          <div class="event-name">로또런 LOTTO RUN</div>
-          <div class="event-desc">번호 선택해서 토요일 추첨</div>
-        </div>
-        <span class="event-arrow">→</span>
-      </a>
-      <button class="modal-close" id="modalClose">닫기</button>
-    </div>
-  </div>
 </div>
 
 <script>
-const eventBtn = document.getElementById('eventBtn');
-const modal = document.getElementById('eventModal');
-const modalClose = document.getElementById('modalClose');
-
-eventBtn.onclick = (e) => { e.preventDefault(); modal.classList.add('on'); };
-modalClose.onclick = () => modal.classList.remove('on');
-modal.onclick = (e) => { if (e.target === modal) modal.classList.remove('on'); };
+// 임시 준비 중 페이지 - 모달 사용 안 함
 </script>
 </body>
 </html>
