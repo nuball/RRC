@@ -233,7 +233,7 @@ body {
   text-align: center;
   padding: 14px 12px;
   background: var(--surface);
-  border: 1.5px solid rgba(255,255,255,.5);
+  border: 1px solid rgba(255,255,255,.35);
   border-radius: 14px;
   text-decoration: none;
   color: inherit;
