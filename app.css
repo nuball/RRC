@@ -138,27 +138,19 @@ body {
   width: 130px;
   height: 130px;
   border-radius: 0;
-  background: #ffffff;
+  background: transparent;
   display: grid;
   place-items: center;
   position: relative;
-  box-shadow:
-    inset 0 0 0 1px #ffffff,
-    0 0 0 3px rgba(255,255,255,.08),
-    0 6px 20px rgba(0, 0, 0, .4);
-  overflow: hidden;
-  transform: translateZ(0);
-  backface-visibility: hidden;
 }
 
 .hero-char {
-  width: 128px;
-  height: 128px;
+  width: 130px;
+  height: 130px;
   object-fit: contain;
   position: relative;
   z-index: 1;
   display: block;
-  transform: translateZ(0);
 }
 
 /* 히어로 텍스트 */
@@ -280,24 +272,17 @@ body {
   width: 56px;
   height: 56px;
   border-radius: 0;
-  background: #ffffff;
+  background: transparent;
   display: grid;
   place-items: center;
   margin-bottom: 8px;
-  box-shadow:
-    inset 0 0 0 1px #ffffff,
-    0 4px 12px rgba(0, 0, 0, .25);
-  overflow: hidden;
-  transform: translateZ(0);
-  backface-visibility: hidden;
 }
 
 .cat-icon-img {
-  width: 54px;
-  height: 54px;
+  width: 56px;
+  height: 56px;
   object-fit: contain;
   display: block;
-  transform: translateZ(0);
 }
 
 .cat-name {
