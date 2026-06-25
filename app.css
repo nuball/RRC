@@ -265,9 +265,9 @@ body {
 }
 
 .cat-icon-wrap {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  border-radius: 0;
   background: #ffffff;
   display: grid;
   place-items: center;
@@ -276,8 +276,8 @@ body {
 }
 
 .cat-icon-img {
-  width: 36px;
-  height: 36px;
+  width: 56px;
+  height: 56px;
   object-fit: contain;
 }
 
