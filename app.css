@@ -102,7 +102,7 @@ body {
    ============================================================ */
 .hero {
   position: relative;
-  padding: 18px 24px 22px;
+  padding: 42px 24px 22px;
   margin-top: 4px;
   background:
     linear-gradient(135deg, rgba(30, 42, 82, .9) 0%, rgba(15, 24, 48, .9) 100%);
@@ -156,10 +156,10 @@ body {
   transform: scale(.92);
 }
 
-/* 플로팅 메시지 */
+/* 말풍선 (위쪽) */
 .speech-bubble {
   position: absolute;
-  top: calc(100% + 10px);
+  bottom: calc(100% + 8px);
   left: 50%;
   transform: translate(-50%, 10px);
   background: #fff;
@@ -172,8 +172,21 @@ body {
   box-shadow: 0 6px 20px rgba(0,0,0,.4);
   opacity: 0;
   pointer-events: none;
-  transition: opacity .4s ease, transform .5s cubic-bezier(.34,1.56,.64,1);
-  z-index: 10;
+  transition: opacity .3s ease, transform .4s cubic-bezier(.34,1.56,.64,1);
+  z-index: 100;
+}
+
+.speech-bubble::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 7px solid #fff;
 }
 
 .speech-bubble.show {
