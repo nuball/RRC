@@ -156,42 +156,29 @@ body {
   transform: scale(.92);
 }
 
-/* 말풍선 */
+/* 플로팅 메시지 */
 .speech-bubble {
   position: absolute;
-  top: -20px;
-  right: calc(100% - 20px);
-  transform: scale(.7);
-  transform-origin: bottom right;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translate(-50%, 10px);
   background: #fff;
   color: #0a1428;
-  padding: 8px 14px;
-  border-radius: 18px;
-  font-size: 12px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 13px;
   font-weight: 700;
   white-space: nowrap;
-  box-shadow: 0 4px 16px rgba(0,0,0,.3);
+  box-shadow: 0 6px 20px rgba(0,0,0,.4);
   opacity: 0;
   pointer-events: none;
-  transition: opacity .25s, transform .25s cubic-bezier(.34,1.56,.64,1);
+  transition: opacity .4s ease, transform .5s cubic-bezier(.34,1.56,.64,1);
   z-index: 10;
-}
-
-.speech-bubble::after {
-  content: '';
-  position: absolute;
-  bottom: -4px;
-  right: 12px;
-  width: 12px;
-  height: 12px;
-  background: #fff;
-  transform: rotate(45deg);
-  z-index: -1;
 }
 
 .speech-bubble.show {
   opacity: 1;
-  transform: scale(1);
+  transform: translate(-50%, 0);
 }
 
 .hero-char {
