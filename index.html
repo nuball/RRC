@@ -25,8 +25,9 @@
       <div class="hero-glow"></div>
 
       <div class="hero-char-wrap">
-        <div class="hero-char-circle">
+        <div class="hero-char-circle" id="charBtn">
           <img src="character.png" class="hero-char" alt="로고">
+          <div class="speech-bubble" id="speechBubble"></div>
         </div>
       </div>
 
@@ -84,6 +85,53 @@
 
 <script>
 // 임시 준비 중 페이지 - 모달 사용 안 함
+</script>
+<script>
+// 캐릭터 클릭 시 말풍선
+const charBtn = document.getElementById('charBtn');
+const bubble = document.getElementById('speechBubble');
+
+const messages = [
+  "오늘도 화이팅! 🏃",
+  "한 발 더!",
+  "수고하셨어요 💪",
+  "달려봅시다 🚀",
+  "함께 가요!",
+  "땀이 곧 PB!",
+  "오늘의 러닝 가즈아 🔥",
+  "달리는 자, 빛난다 ✨",
+  "한 걸음씩, 끝까지!",
+  "RRC 최고 🚀"
+];
+
+let bubbleTimer;
+
+charBtn.addEventListener('click', (e) => {
+  // 원형 영역만 클릭 인식
+  const rect = charBtn.getBoundingClientRect();
+  const cx = rect.left + rect.width / 2;
+  const cy = rect.top + rect.height / 2;
+  const dx = e.clientX - cx;
+  const dy = e.clientY - cy;
+  const dist = Math.sqrt(dx*dx + dy*dy);
+  if (dist > rect.width / 2) return;
+
+  // 랜덤 메시지
+  const msg = messages[Math.floor(Math.random() * messages.length)];
+  bubble.textContent = msg;
+  bubble.classList.remove('show');
+  void bubble.offsetWidth; // reflow
+  bubble.classList.add('show');
+
+  // 살짝 눌린 효과
+  charBtn.classList.add('pressed');
+  setTimeout(() => charBtn.classList.remove('pressed'), 150);
+
+  clearTimeout(bubbleTimer);
+  bubbleTimer = setTimeout(() => {
+    bubble.classList.remove('show');
+  }, 2000);
+});
 </script>
 </body>
 </html>

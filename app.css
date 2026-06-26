@@ -139,6 +139,51 @@ body {
   display: grid;
   place-items: center;
   position: relative;
+  cursor: pointer;
+  transition: transform .15s ease;
+  clip-path: circle(50% at 50% 50%);
+}
+
+.hero-char-circle.pressed {
+  transform: scale(.92);
+}
+
+/* 말풍선 */
+.speech-bubble {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%) scale(.7);
+  background: #fff;
+  color: #0a1428;
+  padding: 8px 14px;
+  border-radius: 18px;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  box-shadow: 0 4px 16px rgba(0,0,0,.3);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .25s, transform .25s cubic-bezier(.34,1.56,.64,1);
+  z-index: 10;
+}
+
+.speech-bubble::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #fff;
+}
+
+.speech-bubble.show {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
 }
 
 .hero-char {
