@@ -141,7 +141,15 @@ body {
   position: relative;
   cursor: pointer;
   transition: transform .15s ease;
-  clip-path: circle(50% at 50% 50%);
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.hero-char-circle img {
+  -webkit-user-drag: none;
+  user-drag: none;
+  pointer-events: none;
 }
 
 .hero-char-circle.pressed {
