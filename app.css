@@ -464,3 +464,146 @@ body {
 @supports (padding-bottom: env(safe-area-inset-bottom)) {
   .hub { padding-bottom: calc(32px + env(safe-area-inset-bottom)); }
 }
+
+/* ============================================================
+   PC 반응형 (768px 이상)
+   ============================================================ */
+@media (min-width: 768px) {
+  .wrap, .hub {
+    max-width: 960px !important;
+    padding: 32px 40px 64px !important;
+  }
+
+  .topbar {
+    padding: 32px 0 12px;
+  }
+
+  .topbar-logo {
+    font-size: 64px;
+  }
+
+  .topbar-divider {
+    width: 260px;
+  }
+
+  .topbar-sub {
+    font-size: 12px;
+  }
+
+  /* 히어로: 좌우 나란히 */
+  .hero {
+    padding: 40px 48px !important;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 40px;
+    align-items: center;
+    margin-top: 12px;
+  }
+
+  .hero-char-wrap {
+    margin-bottom: 0 !important;
+  }
+
+  .hero-char-circle {
+    width: 180px;
+    height: 180px;
+  }
+
+  .hero-char {
+    width: 180px;
+    height: 180px;
+  }
+
+  .hero-text {
+    text-align: left;
+  }
+
+  .hero-badge {
+    font-size: 14px;
+    padding: 6px 14px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  .hero-tag {
+    font-size: 15px;
+  }
+
+  /* 카테고리: 4열 가로 */
+  .cat-grid {
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 16px !important;
+    margin-top: 24px !important;
+  }
+
+  .cat-card {
+    padding: 24px 16px !important;
+    border-radius: 18px;
+  }
+
+  .cat-icon-wrap {
+    width: 72px !important;
+    height: 72px !important;
+    margin-bottom: 14px !important;
+  }
+
+  .cat-icon-img {
+    width: 72px !important;
+    height: 72px !important;
+  }
+
+  .cat-name {
+    font-size: 18px !important;
+    margin-bottom: 4px;
+  }
+
+  .cat-desc {
+    font-size: 12px !important;
+  }
+
+  /* 푸터 */
+  .foot {
+    margin-top: 32px !important;
+  }
+
+  .foot-text {
+    font-size: 10px;
+  }
+
+  .foot-disclaimer {
+    font-size: 11px;
+    margin-top: 14px;
+  }
+
+  /* FAQ 페이지 PC 대응 */
+  .topbar-page {
+    max-width: 720px !important;
+    padding: 20px 32px !important;
+  }
+
+  .page {
+    max-width: 720px !important;
+    padding: 32px !important;
+  }
+
+  .faq-q {
+    padding: 20px 24px !important;
+  }
+
+  .faq-q-text {
+    font-size: 16px !important;
+  }
+
+  .faq-a {
+    font-size: 14px !important;
+    padding: 0 24px !important;
+  }
+
+  .faq-item.open .faq-a {
+    padding: 0 24px 22px !important;
+    max-height: 400px !important;
+  }
+}
